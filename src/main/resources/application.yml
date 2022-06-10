@@ -1,0 +1,16 @@
+spring:
+ data:
+  mongodb:
+    uri: mongodb://localhost:27017/gymDb
+    auto-index-creation: true
+
+#spring:
+#  data:
+#    mongodb:
+#      uri : 'mongodb+srv://admin:citymanagement@cluster0.jgnjm.mongodb.net/ManagementSystem?retryWrites=true&w=majority'
+#      auto-index-creation: true
+
+#management:
+#  endpoint:
+#    health:
+#      show-components: 'always'
