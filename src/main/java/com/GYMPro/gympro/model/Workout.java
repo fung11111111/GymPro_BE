@@ -18,4 +18,6 @@ public class Workout {
         this.id = id;
         this.name = name;
     }
+
+
 }
