@@ -1,7 +1,7 @@
-package com.GYMPro.gympro.service;
+package com.GYMPro.gympro.workout.service;
 
-import com.GYMPro.gympro.dao.WorkoutRepo;
-import com.GYMPro.gympro.model.Workout;
+import com.GYMPro.gympro.workout.dao.WorkoutRepo;
+import com.GYMPro.gympro.workout.model.Workout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +11,14 @@ import java.util.Optional;
 @Service
 public class WorkoutService {
 
-    private final WorkoutRepo workoutRepo;
-
     @Autowired
-    public WorkoutService(WorkoutRepo workoutRepo) {
-        this.workoutRepo = workoutRepo;
-    }
+    private WorkoutRepo workoutRepo;
+
+    //todo: seems unit test cannot inject to the constructor
+//    @Autowired
+//    public WorkoutService(WorkoutRepo workoutRepo) {
+//        this.workoutRepo = workoutRepo;
+//    }
 
     public List<Workout> getAllWorkouts() {
         return workoutRepo.findAll();

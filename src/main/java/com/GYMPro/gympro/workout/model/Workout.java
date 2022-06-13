@@ -1,4 +1,4 @@
-package com.GYMPro.gympro.model;
+package com.GYMPro.gympro.workout.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -16,6 +16,10 @@ public class Workout {
 
     public Workout(@JsonProperty("id") String id, @JsonProperty("name") String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public Workout(@JsonProperty("name") String name){
         this.name = name;
     }
 

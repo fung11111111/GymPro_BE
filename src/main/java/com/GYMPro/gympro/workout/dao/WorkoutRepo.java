@@ -1,6 +1,6 @@
-package com.GYMPro.gympro.dao;
+package com.GYMPro.gympro.workout.dao;
 
-import com.GYMPro.gympro.model.Workout;
+import com.GYMPro.gympro.workout.model.Workout;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

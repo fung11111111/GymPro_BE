@@ -1,9 +1,8 @@
-package com.GYMPro.gympro.controller;
+package com.GYMPro.gympro.workout.controller;
 
 
-import com.GYMPro.gympro.dao.WorkoutRepo;
-import com.GYMPro.gympro.model.Workout;
-import com.GYMPro.gympro.service.WorkoutService;
+import com.GYMPro.gympro.workout.model.Workout;
+import com.GYMPro.gympro.workout.service.WorkoutService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

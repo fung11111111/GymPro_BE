@@ -1,8 +1,11 @@
 spring:
+ main:
+    lazy-initialization: true
  data:
   mongodb:
     uri: mongodb://localhost:27017/gymDb
     auto-index-creation: true
+
 
 #spring:
 #  data:
